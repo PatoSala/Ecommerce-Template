@@ -1,0 +1,17 @@
+:root {
+    --bodyBgColor: #201e1e;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4f1;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'Bebas Neue', cursive;
+}

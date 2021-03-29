@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ../partials/head %>
+        <title>
+            <%= req.session.user.name %>
+        </title>
+</head>
+
+<body>
+    <%- include ../partials/navbar %>
+
+        <div class="profile-card-wrapper">
+            <div class="profile-container">
+                <div class="profile-card-left">
+                    <div class="profile-card-top-left-details">
+                        <div class="profile-img">
+                            <img src="" />
+                        </div>
+                        <p class="profile-name">
+                            <%= req.session.user.name %>
+                        </p>
+                    </div>
+                    <div class="profile-card-bot-left">
+                        <form action="" method="">
+                            <button type="submit">Edit</button>
+                        </form>
+                        <form action="/users/logOut" method="post">
+                            <button type="submit">Sign Out</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="profile-card-right-details">
+
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

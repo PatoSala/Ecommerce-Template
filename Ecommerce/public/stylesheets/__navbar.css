@@ -1,0 +1,111 @@
+header {
+    --bgcolor: #fdfdfd;
+    font-family: 'Bebas Neue', cursive;
+    background-color: var(--bgcolor);
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.logo {
+    margin: 0px 40px 0px 40px;
+    font-size: 27px;
+}
+
+.nav-links {
+    margin: 0px 30px 0px 30px;
+}
+
+.nav-links a {
+    font-size: 17px;
+    margin: 0px 10px 0px 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.search-form {
+    position: absolute;
+    right: 0;
+    margin: 0px 40px 0px 0px;
+}
+
+.search-form input {
+    width: 200px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #d8d8d8;
+    margin: 0px 10px 0px 0px;
+    padding: 0px 20px 0px 20px;
+    caret-color: #2050b8;
+    font-size: 16px;
+}
+
+.search-form input:focus {
+    outline: none;
+}
+
+.search-form button {
+    width: 88px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    color: var(--bgcolor);
+    background-color: #2050b8;
+    font-size: 16px;
+}
+
+.search-form button:hover {
+    background-color: #103b97;
+    transition: 0.5s;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    margin: 0px 40px 0px 0px;
+    border: 0px;
+    width: 50px;
+    height: 35px;
+}
+
+.burger .level {
+    margin: 7px 0px 7px 0px;
+    background-color: black;
+    border-radius: 10px;
+    width: 33px;
+    height: 3px;
+}
+
+.burger .level1 {
+    margin: 0px;
+    background-color: black;
+    border-radius: 10px;
+    width: 33px;
+    height: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-form {
+        display: none;
+    }
+    .nav-links {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
+}

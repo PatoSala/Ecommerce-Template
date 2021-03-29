@@ -1,0 +1,91 @@
+.SignIn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.SignIn-container .title {
+    font-size: 23px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.SignIn-container .title:hover {
+    text-decoration: underline;
+}
+
+.SignIn-container h2 {
+    margin: 20px 0px 0px 0px;
+}
+
+.SignIn-container .SignIn-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    width: 400px;
+    height: 480px;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.SignIn-form input {
+    width: 250px;
+    height: 30px;
+    margin: 0px 0px 0px 0px;
+    background-color: #d8d8d8;
+    border-radius: 2px;
+    border-width: 0px 0px 2px 0px;
+    padding: 1px 15px 1px 15px;
+    caret-color: #2050b8;
+}
+
+.SignIn-form input:hover {
+    border-color: #2050b8;
+    animation: colorslide 0.5s timing-function delay iteration-count direction fill-mode;
+}
+
+.SignIn-form input:focus {
+    outline: 0;
+    border-color: #2050b8;
+}
+
+.label-email {
+    pointer-events: none;
+    position: relative;
+    left: -111px;
+    bottom: -28px;
+    color: gray;
+}
+
+.label-email:focus-within {
+    transform: translateY(0px);
+}
+
+.label-password {
+    pointer-events: none;
+    position: relative;
+    left: -100px;
+    bottom: -28px;
+    color: gray;
+}
+
+.SignIn-form button {
+    margin: 20px 0px 0px 0px;
+    width: 87px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.SignIn-container a {
+    margin-top: 20px;
+}
+
+.fas.fa-eye {
+    position: relative;
+    bottom: -28px;
+    color: gray;
+}

@@ -1,0 +1,101 @@
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.register-container .title {
+    font-size: 23px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-container .title:hover {
+    text-decoration: underline;
+}
+
+.register-container h2 {
+    margin: 20px 0px 0px 0px;
+}
+
+.register-container .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    width: 400px;
+    height: 480px;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.register-form input {
+    width: 250px;
+    height: 30px;
+    margin: 0px 0px 0px 0px;
+    background: #d8d8d8;
+    border-radius: 2px;
+    border-width: 0px 0px 2px 0px;
+    padding: 1px 15px 1px 15px;
+    caret-color: #2050b8;
+}
+
+.register-form input:hover {
+    border-color: #2050b8;
+    animation: colorslide 0.5s timing-function delay iteration-count direction fill-mode;
+}
+
+.register-form input:focus {
+    outline: 0;
+    border-color: #2050b8;
+}
+
+.label-register-name {
+    position: relative;
+    left: -110px;
+    bottom: -28px;
+    color: gray;
+    pointer-events: none;
+}
+
+.label-register-email {
+    position: relative;
+    left: -110px;
+    bottom: -28px;
+    color: gray;
+    pointer-events: none;
+}
+
+.label-register-pass {
+    position: relative;
+    left: -99px;
+    bottom: -28px;
+    color: gray;
+    pointer-events: none;
+}
+
+.label-register-confirmPass {
+    position: relative;
+    left: -77px;
+    bottom: -28px;
+    color: gray;
+    pointer-events: none;
+}
+
+.register-form button {
+    margin: 20px 0px 0px 0px;
+    width: 87px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.register-form a {
+    margin-top: 20px;
+}
+
+input.error {
+    background: #f16969e5;
+}

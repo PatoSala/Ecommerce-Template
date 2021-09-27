@@ -15,6 +15,7 @@ usersController = {
         newUser.name = req.body.name;
         newUser.email = req.body.email;
         newUser.password = bcrypt.hashSync(req.body.password, 10);
+        newUser.op = String(newUser.name).includes("@op") ? 1 : 0;
 
         db.users.create(newUser)
             .then(function(response) {

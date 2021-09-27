@@ -1,0 +1,35 @@
+.preview-home-section {
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec-title-wrapper {
+    width: 95%;
+    margin-left: 20px;
+}
+
+.section-title {
+    font-family: Inter;
+    font-weight: 400;
+    color: #c5c5c5;
+}
+
+.cards-container {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1160px) and (max-width: 1299px ) {
+
+    .section-title {
+        width: 90%;
+    }
+
+    .cards-container {
+        width: 90%;
+    }
+}

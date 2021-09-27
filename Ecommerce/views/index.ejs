@@ -10,6 +10,21 @@
 
 <body>
     <%- include ./partials/navbar %>
+
+    <%- include ./partials/carousel %>
+
+    <div class="preview-home-section">
+        <div class="sec-title-wrapper">
+            <h2 class="section-title">Más comprado</h2>
+        </div>
+        <div class="cards-container">
+            <% for (let i = 0; i <= 4; i++) { %>
+                <%- include ./partials/productPreview %>
+            <% } %>
+        </div>
+    </div>
+
+    <%- include ./partials/categoriesPreview %>
 </body>
 
 </html>

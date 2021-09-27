@@ -1,5 +1,13 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Import stylesheets */
 @import '__generic.css';
 @import '__navbar.css';
 @import '__login.css';
 @import '__register.css';
 @import '__profile.css';
+@import '__carousel.css';
+@import '__product-box-preview.css';
+@import '__preview-home-sec.css';
+@import '__categoriesPreview.css';
